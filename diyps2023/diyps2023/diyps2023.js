@@ -93,6 +93,9 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
   } else if (toolChoice == '8' ) { // player5
     image(character7, mouseX-25, mouseY-25,50,50);
     
+  } else if (toolChoice == 'q' || toolChoice == 'Q') { // q places the image we pre-loaded
+    image(tsuro1, mouseX-50, mouseY-50,100,100);  
+    
   } else if (toolChoice == 'w' || toolChoice == 'W') { // w places the image we pre-loaded
     image(tsuro2, mouseX-50, mouseY-50,100,100);    
     
