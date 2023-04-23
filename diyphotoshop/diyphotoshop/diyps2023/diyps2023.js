@@ -1,4 +1,4 @@
-var img;
+var gameboard;
 var initials ='kn'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 var screenbg = 250; // off white background
@@ -8,7 +8,7 @@ function preload() {
 // preload() runs once, it may make you wait
 //  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
 // you can link to an image on your github account
-  img = loadImage('https://nguyenkatalina.github.io//birddetail.png');
+  gameboard = loadImage('https://nguyenkatalina.github.io/tsurogamepieces/gameboard.png');
 }
 
 function setup() {
@@ -118,8 +118,8 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     fill(random(255), random(255), random(255), random(255));
     rect(mouseX, mouseY, 200, 150);
     
-  } else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
-    image(img, mouseX, mouseY, 100, 150);
+  } else if (toolChoice == '1' ) { 
+    image(gameboard, mouseX-200, mouseY+200);
     
   }
  }
